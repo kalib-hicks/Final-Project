@@ -1,17 +1,21 @@
-//initial number of cookies    
+//initial number of treats    
 var num = 0;
+var cps = 0;
+var cursorCount = 0;
+var cursorCost = 0;
+
 
 window.onload = function () {
         var name = prompt("What is your name");
         
         var space = document.getElementById("space");
         
-        space.innerHTML = name + "'s Bakery";
+        space.innerHTML = name + "'s Treat Shop";
 }
 
-var cookie = document.getElementById("cookie");
+var treat = document.getElementById("treat");
 
-function cookieClick() { 
+function treatsClick() { 
     num += 1;
 
     var numbers = document.getElementById("numbers");
@@ -23,7 +27,7 @@ function cookieClick() {
     //automatic Granny upgrade to 2x
     if(num >= 30 ){
         num += 2;
-        upgradeLevel.innerHTML = "Granny Level";
+        upgradeLevel.innerHTML = "Pet Walker";
     }
 
     //automatic factory upgrade to 10x

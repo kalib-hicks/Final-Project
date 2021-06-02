@@ -1,53 +1,67 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="./script.js"></script>
-        <title>Shark Bait's Cookie Clicker Game!</title>
+        <title>Paw Poker!</title>
         <link rel = "stylesheet" href = "./style.css"/>
     </head>
 
     <body>
+
+   
         <div id = "space"></div>
-        <div id = "cookie" onclick="cookieClick()">
-            <img src="assets\wooftreat.png" width="200px"/>
+        <div id = "treats" onclick="treatsClick()">
+            <img src="assets\wooftreat.png" width="400px"/>
         </div>
         
-        <p>Number of Cookies:</p>
+        <p>Number of Treats:</p>
         
         <div id = "numbers"></div>
         <div id= "upgradeLevel"></div>
 
-        <p>Intructions: Click the cookie - this makes more cookies.</p>
+        <p>Intructions: Click the treats - this earns more treats.</p>
+
+        <div class="item" id="cursor">
+            Cursors: <span id="cursorCount">0</span><br>
+            Cursor Cost: <span id="cursorCost">10</span><br>
+            <input type="button" id="buyCursorBtn" value="Buy Cursor">
+        </div>
+
+
         <p>You will AUTOMATICALLY upgrade according the following table of upgrade costs! :)</p>
+
+       
+
 
         <table>
             <tr>
                 <td>Name</td>
-                <td>How many cookies can it make?</td>
+                <td>How many treats can it make?</td>
                 <td>cost</td>
             </tr>
             
             <tr>
-                <td>Granny!</td>
+                <td>Pet Walker!</td>
                 <td>Granny make 2x's as much!</td>
-                <td>30 cookies!</td>
+                <td>30 treats!</td>
             </tr>
             
             <tr>
                 <td>Factory</td>
                 <td> Factory makes 10x's as much!</td>
-                <td>500 cookies!</td>
+                <td>500 treats!</td>
             </tr>
             
             <tr>
                 <td>Plant</td>
                 <td> Plant makes 30x's as much!</td>
-                <td>1,000 cookies!</td>
+                <td>1,000 treats!</td>
             </tr>
             
              <tr>
                 <td>SuperPlant</td>
                 <td> SuperFactory makes 1000x's as much!</td>
-                <td>100,000 cookies!</td>
+                <td>100,000 treats!</td>
             </tr>
 
         </table>
